@@ -1,0 +1,10 @@
+
+First of all, it does not ask you to install Node.js runtime OR npm package manager, it offers you to install them both (if you want)
+
+Now, Node.js runtime is basically what will understand your javascript code and execute it to produce a result.
+
+Npm package manager is a tool which will allow you to install third party libraries (other people's code) by using the command line.
+
+npm install express
+
+will install the framework called express for example.

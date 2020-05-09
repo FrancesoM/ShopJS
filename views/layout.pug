@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title Ciao Ele
+    link( rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css")
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.mb-4
+      a.navbar-brand(href='/') Shop
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarToggleExternalContent' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarToggleExternalContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href='/')
+              | Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='/customers/add') Add Customer
+
+    .container
+      block header
+      block content
+          
+          
+      br
+      hr
+      footer
+        p Copyright &copy FrancesoM 2020 
+        
+  script(src="/bower_components/jquery/dist/jquery.js")
+  script(src="/bower_components/bootstrap/dist/js/bootstrap.js")

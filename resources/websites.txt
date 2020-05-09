@@ -1,0 +1,20 @@
+pug language: https://pugjs.org/language/
+express: https://expressjs.com/it/guide/using-middleware.html
+mongoDB docs: https://docs.mongodb.com/
+mongoosejs is a lib to connect a nodejs to our database
+
+
+start mongoDB server: brew services stop mongodb-community@4.2
+stop mongoDB server: brew services start mongodb-community@4.2
+
+once the service is running type mongo to connect to it
+
+insert data in the database from cmd line
+  use Shop
+  db.createCollection(clients)
+
+insert data in the db
+db.clients.insert({
+  name:"Francesco"
+  surname:"Maio"
+})

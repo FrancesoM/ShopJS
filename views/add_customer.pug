@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 #{title}
+  form(method="POST", action="/customers/add")
+    #form-group
+      label Name:
+      input.form-control(name="name",type="text")
+    #form-group
+      label Surname:
+      input.form-control(name="surname",type="text")
+      
+    input.btn.btn-primary(type="submit",value="Submit")

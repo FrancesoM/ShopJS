@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .card(style='width: 20rem;')
+    ul.list-group.list-group-flush
+      li.list-group-item.p-3.mb-2.bg-warning 
+      li.list-group-item= customer.name
+      li.list-group-item= customer.surname
+      li.list-group-item
+        a(href="/customer/delete/"+customer._id)= "Delete Customer"
